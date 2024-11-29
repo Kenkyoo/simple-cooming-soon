@@ -28,14 +28,12 @@ Una página sencilla de **"Coming Soon"** con un contador regresivo. Implementad
 - El contador está configurado para contar hasta el **10 de octubre de 2025**.
 - Puedes modificar la fecha cambiando el valor en `script.js`:
 
-```javascript
 $('#clock').countdown('2025/10/10', function(event) {
   $(this).html(event.strftime('%D days %H:%M:%S'));
 })
 .on('finish.countdown', function(event) {
   $(this).html('The end!');
 });
-
 
 Créditos
 
